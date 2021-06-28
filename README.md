@@ -7,7 +7,7 @@ Inspired from MacOS Big Sur, I have tried to make it as familiar as possible to 
 
 I used purely HTML CSS and JS with no framework but some part of jQuery. I hope you like this!
 
-
+https://arghyagod-coder.github.io/webintosh/
 
 
 ## Features
@@ -22,9 +22,11 @@ I used purely HTML CSS and JS with no framework but some part of jQuery. I hope 
   
 ## Screenshots
 
+![App Screenshot](assets/desktop.png)
 ![App Screenshot](assets/home.png)
-![App Screenshot](assets/menu.png)
-![App Screenshot](assets/apps.png)
+![App Screenshot](assets/launcher.png)
+![App Screenshot](assets/terminal.png)
+![App Screenshot](assets/about.png)
 
 
   
