@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="shortcut icon" href="favicon.ico" sizes="16x16">
+   <link rel="apple-touch-icon" sizes="180x180" href="icons/applewh.png" aria-setsize="16x16">
+   <link rel="icon" type="image/png" href="icons/applebl.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="icons/applebl.png" sizes="16x16">
+   <link rel="mask-icon" href="icons/applewh.png" sizes="16x16">
+   <meta name="theme-color" content="#ffffff">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <title>Webintosh Online</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+
+<body>
+   <header>
+      <nav class="navbar">
+         <ul>
+            <li>
+               <div class="dropdown">
+                  <img onclick="myaFunction()" class="dropbtn"id='logo' src="icons/applewh.png" alt="">
+                  <div id="myaDropdown" class="adropdown-content">
+                     <a onclick="openTrWin('viewp/about.jpg', 'About This Mac')" id='text'>About This Mac</a>
+                     <hr>
+                     <a onclick="openImgWin('viewp/settings.png', 'System Preferences')" id='text'>System Preferences...</a>
+                     <a onclick="openPopup('https://apps.apple.com', 'App Store')" id='text'>App Store...</a>
+                     <hr>
+                     <a href="#" id='text'>Sleep</a>
+                     <a onclick="window.location.href=window.location.href" id='text'>Reboot</a>
+                     <a onclick="window.top.close()" id='text'>Shut Down</a>
+                     <hr>
+                     <a onclick='window.location.reload()' id='text'>Log Out</a>
+                  </div>
+               </div>
+               </div>
+            </li>
+            <li>
+               <div class="dropdown">
+                  <a onclick="myFunction()" class="dropbtn">File</a>
+                  <div id="myDropdown" class="dropdown-content">
+                     <a href="#" id='text'>New...</a>
+                     <a href="#" id='text'>Open...</a>
+                     <a href="#" id='text'>Open Recent</a>
+                     <hr>
+                     <a href="#" id='text'>Close</a>
+                     <a href="#" id='text'>Save...</a>
+                     <a href="#" id='text'>Save As...</a>
+                     <a href="#" id='text'>Duplicate</a>
+                     <a href="#" id='text'>Rename...</a>
+                     <a href="#" id='text'>Move To...</a>
+                     <a href="#" id='text'>Revert To...</a>
+                     <hr>
+                     <a href="#" id='text'>Import from iPhone or iPad</a>
+                     <a href="#" id='text'>Export as PDF</a>
+                     <a href="#" id='text'>Share</a>
+                     <hr>
+                     <a href="#" id='text'>Show Properties</a>
+                     <a href="#" id='text'>Page Setup...</a>
+                     <a href="#" id='text'>Print...</a>
+                  </div>
+               </div>
+            </li><li>
+               <div class="dropdown">
+                  <a onclick="emyFunction()" class="dropbtn">Edit</a>
+                  <div id="myeDropdown" class="edropdown-content">
+                     <a href="#" id='text'>Undo Typing</a>
+                     <a href="#" id='text' style="color: rgb(70, 70, 70);">Redo</a>
+                     <hr>
+                     <a href="#" id='text'>Cut</a>
+                     <a href="#" id='text'>Copy</a>
+                     <a href="#" id='text'>Paste</a>
+                     <a href="#" id='text' style="color: rgb(58, 58, 58);">Paste and Match Style</a>
+                     <a href="#" id='text'>Delete</a>
+                     <a href="#" id='text'>Complete</a>
+                     <a href="#" id='text'>Select All</a>
+                     <hr>
+                     <a href="#" id='text'>Insert</a>
+                     <a href="#" id='text'>Attach Files...</a>
+                     <a href="#" id='text'>Add Link...</a>
+                     <hr>
+                     <a href="#" id='text'>Find</a>
+                     <a href="#" id='text'>Spelling and Grammar</a>
+                     <hr>
+                     <a href="#" id='text'>Start Dictation...</a>
+                     <a href="#" id='text'>Emoji & Symbols</a>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="dropdown">
+                  <a onclick="myvFunction()" class="dropbtn">View</a>
+                  <div id="myvDropdown" class="vdropdown-content">
+                     <a href="#" id='text'>Customize Toolbar...</a>
+                     <a href="#" id='text'>Hide Favourites Bar</a>
+                     <a href="#" id='text'>Hide Status Bar</a>
+                     <hr>
+                     <a href="#" id='text'>Show Sidebar</a>
+                     <a href="#" id='text'>Show Bookmarks Sidebar</a>
+                     <a href="#" id='text'>Show Reading List Sidebar</a>
+                     <a href="#" id='text'>Show All Tabs</a>
+                     <a href="#" id='text'>Stop</a>
+                     <a href="#" id='text'>Reload Page from Origin</a>
+                     <a href="#" id='text'>Reload with Plug-ins</a>
+                     <hr>
+                     <a href="#" id='text'>Make Text Bigger</a>
+                     <a href="#" id='text'>Make Text Lesser</a>
+                     <a href="#" id='text'>Actual Size</a>
+                     <hr>
+                     <a href="#" id='text'>Text Encoding</a>
+                     <a href="#" id='text'>Enter Fullscreen/a>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="dropdown">
+                  <a onclick="mygFunction()" style="top:-21px" class="dropbtn">Go</a>
+                  <div id="mygDropdown" class="gdropdown-content">
+                     <a href="#" id='text'>Select Startup Disk of Desktop</a>
+                     <hr>
+                     <a href="#" id='text'>Recents</a>
+                     <a href="#" id='text'>Documents</a>
+                     <a href="#" id='text'>Desktop</a>
+                     <a href="#" id='text'>Downloads</a>
+                     <a href="#" id='text'>Home</a>
+                     <a href="#" id='text'>Library</a>
+                     <a href="#" id='text'>Computer</a>
+                     <a href="#" id='text'>AirDrop</a>
+                     <a href="#" id='text'>Network</a>
+                     <a href="#" id='text'>iCloud Drive</a>
+                     <a href="#" id='text'>Applications</a>
+                     <a href="#" id='text'>Utilities</a>
+                     <hr>
+                     <a href="#" id='text'>Recent Folders -></a>
+                     <hr>
+                     <a href="#" id='text'>Go to Folder...</a>
+                     <a href="#" id='text'>Connect to Server...</a>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="dropdown">
+                  <a onclick="mywFunction()" class="dropbtn">Window</a>
+                  <div id="mywDropdown" class="wdropdown-content">
+                     <a href="#" id='text'>Minimize</a>
+                     <a href="#" id='text'>Zoom</a>
+                     <hr>
+                     <a href="#" id='text'>Show Previous Tab</a>
+                     <a href="#" id='text'>Show Next Tab</a>
+                     <hr>
+                     <a href="#" id='text'>Move Tab To Next Window</a>
+                     <a href="#" id='text'>Merge All Windows</a>
+                     <a href="#" id='text'>Bring All to Front</a>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="dropdown">
+                  <a onclick="myhFunction()" class="dropbtn">Help</a>
+                  <div id="myhDropdown" class="hdropdown-content">
+                     <a href="#" id='text'>MacOS BigSur Help</a>
+                  </div>
+               </div>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <img id="myVideo" src="bg/macOSBigSur.png" alt="">
+   <div id="dock-container">
+      <div id="dock">
+         <ul>
+            <li>
+               <span class='app'>Finder</span>
+               <a ondblclick="openImgWin('viewp/finder.png', 'Finder')"><img src="icons/finder.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Launcher</span>
+               <a href="launcher.html"><img src="icons/launcher.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Siri</span>
+               <a ondblclick="openPopup('https://www.apple.com/siri/', 'Siri')"><img src="icons/siri.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Safari Web Browser</span>
+               <a ondblclick="openPopup('https://www.apple.com/safari/', 'Safari')"><img src="icons/safari.png" /></a>
+            </li>
+            <li>
+               <span class='app'>WhatsApp</span>
+               <a ondblclick="openPopup('https://web.whatsapp.com/', 'WhatsApp')"><img src="icons/chat.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Mail</span>
+               <a ondblclick="openPopup('https://mail.google.com/', 'Mail')"><img src="icons/mail.png"></a>
+            </li>
+            <li>
+               <span class='app'>Photos</span>
+               <a ondblclick="openPopup('https://photos.google.com/', 'Photos')"><img src="icons/photos.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Calendar</span>
+               <a ondblclick="openPopup('https://www.timeanddate.com/calendar/monthly.html/')"><img
+                     src="icons/cal.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Terminal</span>
+               <a ondblclick="openPopup('terminal.html', 'Terminal')"><img src="icons/terminal.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Contacts</span>
+               <a ondblclick="openPopup('https://apps.apple.com/us/app/contacts/id1069512615', 'Contacts')"><img
+                     src="icons/contacts.png" /></a>
+            </li>
+            <li>
+               <span class='app'>iNotes</span>
+               <a ondblclick="openPopup('https://www.rapidtables.com/tools/notepad.html', 'Notes')"><img
+                     src="icons/notes.png" /></a>
+            </li>
+            <li>
+               <span class='app'>AppleTV</span>
+               <a ondblclick="openPopup('https://tv.apple.com/', 'TV+')"><img src="icons/atv.png" /></a>
+            </li>
+            <li>
+               <span class='app'>iTunes</span>
+               <a ondblclick="openPopup('https://www.itunes.com/login', 'iTunes')"><img src="icons/itunes.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Microsoft Word 2019</span>
+               <a ondblclick="openPopup('https://office.live.com/start/Word.aspx', 'Microsoft Word 2019')"><img
+                     src="icons/msw.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Facetime</span>
+               <a ondblclick="openPopup('https://facetime.apple.com/join', 'FaceTime')"><img
+                     src="icons/facetime.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Visual Studio Code</span>
+               <a ondblclick="openPopup('https://www.vscodecloud.com/', 'Visual Studio Code')"><img
+                     src="icons/vsc.png" /></a>
+            </li>
+            <li>
+               <span class='app'>GitHub</span>
+               <a ondblclick="openPopup('https://github.com/', 'Github')"><img src="icons/github.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Twitter</span>
+               <a ondblclick="openPopup('https://twitter.com/', 'Twitter')"><img src="icons/twitter.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Text-Edit</span>
+               <a ondblclick="openPopup('https://www.onlinetexteditor.com/', 'Text-Edit')"><img
+                     src="icons/ted.png" /></a>
+            </li>
+            <li>
+               <span class='app'>App-Store</span>
+               <a ondblclick="openPopup('https://apps.apple.com/', 'App Store')"><img src="icons/appstore.png" /></a>
+            </li>
+            <li>
+               <span class='app'>System Preferences</span>
+               <a ondblclick="openImgWin('viewp/settings.png', 'System Preferences')"><img
+                     src="icons/settings.png" /></a>
+            </li>
+            <li>
+               <a><img src="icons/spacer.png" style="width: 0.3vw; height: 2.9vw" /></a>
+            </li>
+            <li>
+               <span class='app'>Home</span>
+               <a ondblclick="openTrWin('viewp/desktop.jpeg', 'Desktop')"><img src="icons/files.png" /></a>
+            </li>
+            <li>
+               <span class='app'>Trash</span>
+               <a ondblclick="openTrWin('viewp/trash.png', 'Trash')"><img src="icons/trash.png" /></a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   </div>
+   <div class="widgets">
+      <ul>
+         <li>
+            <a><img id='ac'
+                  src="widget/accesitibility.png"></a>
+         </li>
+         <li>
+            <a><img id='battery'
+                  src="widget/battery.png"></a>
+         </li>
+         <li>
+            <a><img id='wifi'
+                  src="widget/wifi.png" /></a>
+         </li>
+         <li>
+            <a><img id='search'
+                  src="widget/search.png" /></a>
+         </li>
+         <li>
+            <span id='date'></span>
+         </li>
+         <li>
+            <span id='time'></span>
+         </li>
+      </ul>
+   </div>
+
+   
+
+
+   <script src="script.js"></script>
+</body>
+
+</html>

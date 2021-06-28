@@ -1,0 +1,389 @@
+#dock-container {
+    margin: auto;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    filter: drop-shadow(2px 2px 5px #222);
+    /* text-align: center; */
+    /* right: 9vw; */
+    height: 57h;
+    left: 11vw;
+    width: 78%;
+    max-width: 90vw;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: inline-block;
+ }
+
+ #dock-container li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+ }
+
+ #dock-container li img {
+    width: 2.9vw;
+    filter: drop-shadow(2px 2px 5px rgba(110, 200, 241, 0.623));
+    height: 2.9vw;
+    display: inline;
+    border-radius: 10px;
+    -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent),
+          color-stop(0.7, transparent), to(rgba(255, 255, 255, .5)));
+    -webkit-transition: all 0.3s;
+    -webkit-transform-origin: 50% 100%;
+ }
+
+ #dock-container li:hover img {
+    -webkit-transform: scale(1.2);
+ }
+
+ #dock-container li:hover+li img,
+ #dock-container li.prev img {
+    -webkit-transform: scale(1.2);
+    margin: 0 0.5em;
+ }
+
+ #dock-container li span {
+    justify-self: center;
+    display: none;
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    min-width: 100px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 2px 0;
+    border-radius: 5px;
+ }
+
+ #dock-container li:hover span {
+    display: inline-block;
+    color: #fff;
+ }
+
+ #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+ }
+
+ .navbar {
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(100px);
+    /* background-color: rgba(255, 255, 255, 0.308); */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.287), transparent);
+    left: 0;
+    width: 100%;
+    /* background-image: linear-gradient(transparent, rgb(204, 204, 204)); */
+    /* opacity: 0.5; */
+    height: 3%;
+ }
+
+
+ .navbar li {
+    float: left;
+    list-style: none;
+
+ }
+
+ .navbar ul li a {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: -10px;
+    padding: 2px 2px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: medium;
+
+ }
+
+ .navbar img {
+    position: absolute;
+    top: 4px;
+    filter: drop-shadow(1px 1px 2px #222);
+    left: 26px;
+    width: 16px;
+
+    height: 20px;
+ }
+
+ .widgets li {
+    list-style: none;
+    float: right;
+ }
+
+ .widgets img {
+    margin-left: 6vw;
+    margin-right: 6vw;
+ }
+
+ #wifi {
+    position: absolute;
+    right: 10%;
+    width: 36px;
+    top: 0.2%;
+    height: 20px;
+    list-style: none;
+ }
+
+ #ac {
+    position: absolute;
+    right: 12%;
+    filter: brightness(0) invert(1);
+    width: 20px;
+    top: 0.2%;
+    height: 20px;
+    list-style: none;
+ }
+
+ #battery {
+    position: absolute;
+    right: 8.5%;
+    filter: brightness(0) invert(1);
+    width: 20px;
+    top: 0.2%;
+    height: 20px;
+    list-style: none;
+ }
+
+ #search {
+    position: absolute;
+    right: 7%;
+    filter: brightness(0) invert(1);
+    width: 20px;
+    top: 0.2%;
+    height: 20px;
+    list-style: none;
+ }
+
+ #date {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    position: absolute;
+    right: 5%;
+    top: 4px;
+    padding: 2px 2px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: medium;
+ }
+
+ #time {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    position: absolute;
+    right: 2%;
+    top: 4px;
+    padding: 2px 2px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: medium;
+ }
+
+
+ /* The container <div> - needed to position the dropdown content */
+ .dropdown {
+    position: relative;
+    display: inline-block;
+ }
+
+ /* Dropdown Content (Hidden by Default) */
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 17px;
+    background-color: rgba(255, 255, 255, 0.438);      
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 2px;
+    height: 442px;
+ }
+
+ #text{
+    top: 4px;
+    font-size: 15px;
+    color: black;
+    text-shadow: none;
+    font-weight: 530;
+    bottom: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    display: block;
+ }
+
+ #text:hover{
+    background-color: rgba(1, 1, 235, 0.527);
+    color: white;
+ }
+
+
+ /* Links inside the dropdown */
+ .dropdown-content a {
+    margin-top: 5px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+ }
+ /* Links inside the dropdown */
+ .edropdown-content a {
+    margin-top: 5px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+ }
+ .edropdown-content {
+    display: none;
+    position: absolute;
+    top: 17px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.438), rgba(160, 160, 160, 0.541), rgba(128, 128, 128, 0.418));
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 2px;
+    height: 442px;
+ }
+
+    /* Links inside the dropdown */
+ .vdropdown-content a {
+    margin-top: 5px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+ }
+ .vdropdown-content {
+    display: none;
+    position: absolute;
+    top: 17px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.438), rgba(160, 160, 160, 0.541), rgba(128, 128, 128, 0.418));
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 2px;
+    height: 442px;
+ }
+
+ .gdropdown-content a {
+    margin-top: 5px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+ }
+ .gdropdown-content {
+    display: none;
+    position: absolute;
+    top: 17px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.438), rgba(160, 160, 160, 0.541), rgba(128, 128, 128, 0.418));
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 2px;
+    height: 442px;
+ }
+
+ .wdropdown-content a {
+    margin-top: 5px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+ }
+ .wdropdown-content {
+    display: none;
+    position: absolute;
+    top: 17px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.438), rgba(160, 160, 160, 0.541), rgba(128, 128, 128, 0.418));
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 2px;
+    height: 230px;
+ }
+ .hdropdown-content a {
+    margin-top: 5px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+ }
+ .hdropdown-content {
+    display: none;
+    position: absolute;
+    top: 17px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.438), rgba(160, 160, 160, 0.541), rgba(128, 128, 128, 0.418));
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 2px;
+    height: 30px;
+ }
+
+ .adropdown-content a {
+    margin-top: 5px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+ }
+ .adropdown-content {
+    position: absolute;
+    left: -24px;
+    display: none;
+    position: absolute;
+    top: 17px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.438), rgba(160, 160, 160, 0.541), rgba(128, 128, 128, 0.418));
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 2px;
+    height: 220px;
+ }
+
+
+ #logo {
+    position: absolute;
+    top: -27px;
+    left: -15px;
+ }
+
+ ::selection{
+    background-color: none;
+ }
+ .show {
+    display: block;
+ }
+
+ 

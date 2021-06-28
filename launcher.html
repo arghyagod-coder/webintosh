@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Launcher</title>
+</head>
+<style>
+
+#launch{
+    -webkit-animation: glow1 1s ease-in-out alternate;
+    -moz-animation: glow1 1s ease-in-out alternate;
+    animation: glow1 1s ease-in-out alternate;
+}
+@keyframes glow1 {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+    .launcher{
+        display: inline-block;
+        backdrop-filter: blur(50px);
+        background-color: rgba(255, 255, 255, 0.315);
+        border-radius: 13px;
+        align-items: center;
+        width: 80%;
+        position: absolute;
+        left:10%;
+    }
+
+    .launcher img{
+        width: 7%;
+        display: i;
+        height: 7%;
+        margin: 2%;
+        text-align: center;
+    }
+
+    #images{
+        display: inline;
+        align-items: center;
+    }
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+   }
+   span {
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-self: center;
+
+    position: absolute;
+    left: 0%;
+    font-weight: 700;
+    font-size: 2vh;
+    text-align: center;
+    width: 100%;
+    min-width: 100px;
+}
+
+#images{
+    color: rgba(255, 255, 255, 0);
+}
+
+#images:hover{
+    color: black;
+}
+.headtext{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-self: center;
+    position: absolute;
+    left: 0%;
+    margin-top: 2vh;
+    margin-bottom: 20%;
+    margin-left: 1%;
+    margin-right: 2%;
+    font-weight: 700;
+    font-size: 2vh;
+    text-align: center;
+    width: 100%;
+    min-width: 100px;
+}
+.first{
+    display: inline-block;
+        backdrop-filter: blur(50px);
+        background-color: rgba(255, 255, 255, 0.315);
+        border-radius: 13px;
+        align-items: center;
+        width: 80%;
+        position: absolute;
+        left:10%;
+        height: 20%;
+        text-align: center;
+        font-size: 9%;
+
+}
+</style>
+<body>
+    <img src="" id='myVideo' alt="">
+    <div id="launch">
+    <section>
+        <div class='launcher' class='first'><h1 style="font-size: 160%;text-align: center; color: white;">Apple Launcher</h1><a href="index.html"><img src="icons/close.png" style="width: 40px; height: 40px; position: absolute; left: 0.5%; top: -2px;" alt=""></a></div>
+    </section>
+    <br>
+    <br>
+    <br><br>
+    <section><div class='launcher'>
+        
+    <br><br>
+        <div id="images">
+            <img ondblclick="openPopup('https://amazon.com', 'Amazon')" src="icons/amazon.png" alt="">
+            <span>Amazon</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://tv.apple.com/', 'Apple TV+')" src="icons/atv.png" alt="">
+            <span>Apple TV+</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://apps.apple.com/', 'App Store')" src="icons/appstore.png" alt="">
+            <span>App Store</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.audible.com', 'Audible')" src="icons/audible.png" alt="">
+            <span>Audible</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://https://www.online-calculator.com/full-screen-calculator/', 'Calculator')" src="icons/calc.png" alt="">
+            <span>Calculator</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.timeanddate.com/calendar/monthly.html/', 'Calendar')" src="icons/cal.png" alt="">
+            <span>Calendar</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://webcamera.io/', 'Camera')" src="icons/camera.png" alt="">
+            <span>Camera</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://chess.com', 'Chess Online')" src="icons/chess.png" alt="">
+            <span>Chess Online</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.google.com/chrome/browser/index.html', 'Google Chrome')" src="icons/chrome.png" alt="">
+            <span>Chrome Browser</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://web.webex.com/', 'Cisco Webex')" src="icons/cisco.png" alt="">
+            <span>Cisco Webex</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://colab.research.google.com', 'CoLab')" src="icons/colab.png" alt="">
+            <span>Colab</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://onlinecompass.app/', 'Compass')" src="icons/compass.png" alt="">
+            <span>Compass</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://apps.apple.com/us/app/contacts/id1069512615', 'Contacts')" src="icons/contacts.png" alt="">
+            <span>Contacts</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://hotstar.com', 'Disney+ Hotstar')" src="icons/d+h.png" alt="">
+            <span>Disney+ Hotstar</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://duckduckgo.com', 'DuckDuckGo SE')" src="icons/ddg.png" alt="">
+            <span>DuckDuckGo</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://dino-chrome.com', 'Dino Game')" src="icons/dino.png" alt="">
+            <span>Chrome Dino</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://discord.com/channels/@me', 'Discord')" src="icons/discord.png" alt="">
+            <span>Discord</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://duolingo.com', 'Duolingo')" src="icons/duolingo.png" alt="">
+            <span>Duolingo</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://facebook.com', 'Facebook')" src="icons/facebook.png" alt="">
+            <span>Facebook</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://facetime.apple.com/join', 'FaceTime')" src="icons/facetime.png" alt="">
+            <span>FaceTime</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openImgWin('viewp/finder.png', 'Finder')" src="icons/finder.png" alt="">
+            <span>Finder</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://flipkart.com', 'Flipkart')" src="icons/flipkart.png" alt="">
+            <span>Flipkart</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.apple.com/final-cut-pro/', 'FinalCut Pro')" src="icons/fncut.png" alt="">
+            <span>FinalCut Pro</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://console.cloud.google.com/', 'Google Cloud Platform')" src="icons/gcloudpl.png" alt="">
+            <span>Google Cloud Platform</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://drive.google.com', 'Google Drive')" src="icons/gdrive.png" alt="">
+            <span>Google Drive</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://docs.google.com/', 'G Docs')" src="icons/gdocs.png" alt="">
+            <span>Google Docs</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://duo.google.com/', 'Google Duo')" src="icons/gduo.png" alt="">
+            <span>Google Duo</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://fonts.google.com/', 'Google Fonts')" src="icons/gfonts.png" alt="">
+            <span>Google Fonts</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://sheets.google.com/', 'G Sheets')" src="icons/gsheets.png" alt="">
+            <span>Google Sheets</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://slides.google.com/', 'G Slides')" src="icons/gslides.png" alt="">
+            <span>Google Slides</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://github.com', 'GitHub')" src="icons/github.png" alt="">
+            <span>GitHub</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://maps.google.com/', 'Google Maps')" src="icons/gmaps.png" alt="">
+            <span>Google Maps</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://meet.google.com/', 'Google Meet')" src="icons/gmeet.png" alt="">
+            <span>Google Meet</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://google.com', 'Google')" src="icons/google.png" alt="">
+            <span>Google Search Engine</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://photos.google.com/', 'Google Photos')" src="icons/gphotos.png" alt="">
+            <span>Google Photos</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://translate.google.com/', 'Google Translate')" src="icons/gtrans.png" alt="">
+            <span>Google Translate</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://instagram.com', 'Instagram')" src="icons/insta.png" alt="">
+            <span>Instagram</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.apple.com/itunes/', 'iTunes')" src="icons/itunes.png" alt="">
+            <span>iTunes</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://kaggle.com', 'Kaggle')" src="icons/kaggle.png" alt="">
+            <span>Kaggle</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://krunker.io', 'Krunker.IO')" src="icons/krunker.png" alt="">
+            <span>Krunker io</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://getliner.com', 'Liner')" src="icons/liner.png" alt="">
+            <span>Liner</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://linkedin.com', 'LinkedIn')" src="icons/linkedin.png" alt="">
+            <span>LinkedIn</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://mail.google.com', 'Mail')" src="icons/mail.png" alt="">
+            <span>Mail</span>
+    </div>
+        
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://messenger.com', 'Messenger')" src="icons/messenger.png" alt="">
+            <span>Messenger</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://office.live.com/start/Excel.aspx', 'Microsoft Excel 2019')" src="icons/mse.png" alt="">
+            <span>Microsoft Excel</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://office.live.com/start/Word.aspx', 'Microsoft Word 2019')" src="icons/msw.png" alt="">
+            <span>Microsoft Word</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://outlook.live.com', 'Microsoft Outlook')" src="icons/msout.png" alt="">
+            <span>Microsoft Outlook</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://office.live.com/start/PowerPoint.aspx', 'Microsoft PowerPoint')" src="icons/msp.png" alt="">
+            <span>Microsoft PowerPoint</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://sway.office.com/my', 'Microsoft Sway')" src="icons/mssway.png" alt="">
+            <span>Microsoft Sway</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.microsoft.com/en-us/microsoft-teams/log-in', 'Microsoft Teams')" src="icons/msteams.png" alt="">
+            <span>Microsoft Teams</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://29a.ch/timestretch/', 'Music Play')" src="icons/musicplayer.png" alt="">
+            <span>Music Player</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://newegg.com', 'NewEgg')" src="icons/newegg.png" alt="">
+            <span>NewEgg</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://news.google.com/', 'News Feed')" src="icons/news.png" alt="">
+            <span>Google News</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://onlinenotepad.org/notepad', 'iNotes')" src="icons/notes.png" alt="">
+            <span>iNotes</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://onedrive.live.com', 'OneDrive')" src="icons/onedrive.png" alt="">
+            <span>Onedrive</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.docfly.com/pdf-viewer', 'PDF Viewer')" src="icons/pdfview.png" alt="">
+            <span>PDF Viewer</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://viewer.openhdr.org/', 'Photo Viewer')" src="icons/photos.png" alt="">
+            <span>Photo Viewer</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://photopea.com', 'PhotoPea')" src="icons/photoshop.png" alt="">
+            <span>Photoshop</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://pinterest.com', 'Pinterest')" src="icons/pinterest.png" alt="">
+            <span>Pinterest</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://pixlr.com', 'Pixlr Photo Editor')" src="icons/pixlr.png" alt="">
+            <span>Pixlr</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.apple.com/apple-podcasts/', 'Podcasts')" src="icons/pod.png" alt="">
+            <span>Podcasts</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://music.amazon.com/home#', 'Amazon Prime Music')" src="icons/amazonmusic.png" alt="">
+            <span>Amazon Prime Music</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://reddit.com', 'Reddit')" src="icons/reddit.png" alt="">
+            <span>Reddit</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://replit.com', 'ReplIt')" src="icons/replit.png" alt="">
+            <span>Repl.It</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.apple.com/safari/', 'Safari Web Browser')" src="icons/safari.png" alt="">
+            <span>Safari</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openImgWin('viewp/settings.png', 'System Preferences')" src="icons/settings.png" alt="">
+            <span>System Preferences</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.apple.com/siri/', 'Siri')" src="icons/siri.png" alt="">
+            <span>Siri</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://web.skype.com', 'Skype')" src="icons/skype.png" alt="">
+            <span>Skype</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://slither.io', 'Slither IO')" src="icons/snake.png" alt="">
+            <span>Slither io</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://snapdeal.com', 'Snapdeal')" src="icons/snapdeal.png" alt="">
+            <span>SnapDeal</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://open.spotify.com', 'Spotify')" src="icons/spotify.png" alt="">
+            <span>Spotify</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.onlinetexteditor.com/', 'Text-Edit')" src="icons/ted.png" alt="">
+            <span>Text-Edit</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('terminal.html', 'Terminal')" src="icons/terminal.png" alt="">
+            <span>Terminal</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://tiktok.com', 'TikTok')" src="icons/tiktok.png" alt="">
+            <span>TikTok</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openTrWin('viewp/trash.png', 'Trash')" src="icons/trash.png" alt="">
+            <span>Trash</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://twitch.tv', 'Twitch')" src="icons/twitch.png" alt="">
+            <span>Twitch</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://twitter.com', 'Twitter')" src="icons/twitter.png" alt="">
+            <span>Twitter</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://udemy.com', 'Udemy')" src="icons/udemy.png" alt="">
+            <span>Udemy</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://venge.io', 'Venge IO')" src="icons/venge.png" alt="">
+            <span>Venge IO</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://onelineplayer.com/', 'Video Player')" src="icons/videos.png" alt="">
+            <span>Vide Player</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.vscodecloud.com/', 'Visual Studio Code')" src="icons/vsc.png" alt="">
+            <span>Visual Studio Code</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://www.weatheronline.in/', 'Weather')" src="icons/weather.png" alt="">
+            <span>Weather</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://en.wikipedia.org/', 'WikiPedia')" src="icons/wiki.png" alt="">
+            <span>Wikipedia</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://youtube.com', 'YouTube')" src="icons/youtube.png" alt="">
+            <span></span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://music.youtube.com/', 'YT Music')" src="icons/ytmusic.png" alt="">
+            <span>Youtube Music</span>
+    </div>
+        
+        <div id="images">
+            <img ondblclick="openPopup('https://live.zoom.us/', 'Zoom')" src="icons/zoom.png" alt="">
+        <span>Zoom</span>
+        </div>
+    </div>
+</section>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
