@@ -15,6 +15,19 @@
     display: inline-block;
  }
 
+
+ @media only screen 
+ and (min-device-width : 768px) 
+ and (max-device-width : 1024px)  {
+   #dock-container{
+      position: absolute;
+      height: 57px;
+      left: 5vw;
+      right: 5%;
+      width: 90%;
+   }    
+ }
+
  #dock-container li {
     list-style-type: none;
     display: inline-block;
@@ -116,10 +129,13 @@
     filter: drop-shadow(1px 1px 2px #222);
     left: 26px;
     width: 16px;
-
     height: 20px;
  }
 
+ .widgets{
+    right: 0%;
+    max-width: 30%;
+ }
  .widgets li {
     list-style: none;
     float: right;
@@ -173,14 +189,14 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 500;
     position: absolute;
-    right: 5%;
+    right: 4%;
     top: 4px;
     padding: 2px 2px;
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 5px black;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 1px;
     margin-bottom: 1px;
     font-size: medium;
@@ -190,14 +206,14 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 500;
     position: absolute;
-    right: 2%;
+    right: 1%;
     top: 4px;
     padding: 2px 2px;
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 5px black;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 1px;
     margin-bottom: 1px;
     font-size: medium;
@@ -220,12 +236,12 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 2px;
-    height: 442px;
+    /* height: 200%; */
  }
 
  #text{
-    top: 4px;
-    font-size: 15px;
+    top: 1%;
+    font-size: 95%;
     color: black;
     text-shadow: none;
     font-weight: 530;
@@ -235,7 +251,7 @@
  }
 
  #text:hover{
-    background-color: rgba(1, 1, 235, 0.527);
+    background-color: rgba(31, 31, 248, 0.609);
     color: white;
  }
 
@@ -267,7 +283,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 2px;
-    height: 442px;
+    /* height: 442px; */
  }
 
     /* Links inside the dropdown */
@@ -288,7 +304,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 2px;
-    height: 442px;
+    /* height: 442px; */
  }
 
  .gdropdown-content a {
@@ -308,7 +324,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 2px;
-    height: 442px;
+    /* height: 442px; */
  }
 
  .wdropdown-content a {
@@ -328,7 +344,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 2px;
-    height: 230px;
+    /* height: 230px; */
  }
  .hdropdown-content a {
     margin-top: 5px;
@@ -347,7 +363,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 2px;
-    height: 30px;
+    /* height: 30px; */
  }
 
  .adropdown-content a {
@@ -386,4 +402,81 @@
     display: block;
  }
 
- 
+ @media only screen 
+ and (min-device-width : 768px) 
+ and (max-device-width : 1024px)  {
+   
+ #wifi {
+   position: absolute;
+   right: 22%;
+   width: 36px;
+   top: 0.2%;
+   height: 20px;
+   list-style: none;
+}
+
+#ac {
+   position: absolute;
+   right: 27%;
+   filter: brightness(0) invert(1);
+   width: 20px;
+   top: 0.2%;
+   height: 20px;
+   list-style: none;
+}
+
+#battery {
+   position: absolute;
+   right: 19%;
+   filter: brightness(0) invert(1);
+   width: 20px;
+   top: 0.2%;
+   height: 20px;
+   list-style: none;
+}
+
+#search {
+   position: absolute;
+   right: 15%;
+   filter: brightness(0) invert(1);
+   width: 20px;
+   top: 0.2%;
+   height: 20px;
+   list-style: none;
+}
+
+#date {
+   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+   font-weight: 500;
+   position: absolute;
+   right: 4%;
+   top: 4px;
+   padding: 2px 2px;
+   text-decoration: none;
+   color: white;
+   text-shadow: 1px 1px 5px black;
+   margin-left: 2%;
+   margin-right: 2%;
+   margin-top: 1px;
+   margin-bottom: 1px;
+   font-size: medium;
+}
+
+#time {
+   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+   font-weight: 500;
+   position: absolute;
+   right: 0.2%;
+   top: 4px;
+   padding: 2px 2px;
+   text-decoration: none;
+   color: white;
+   text-shadow: 1px 1px 5px black;
+   margin-left: 2%;
+   margin-right: 2%;
+   margin-top: 1px;
+   margin-bottom: 1px;
+   font-size: medium;
+}
+
+   }    

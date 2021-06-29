@@ -5,16 +5,24 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Import Google Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+   <!-- Favicon Setup for Cross Compatibiliyu -->
    <link rel="shortcut icon" href="favicon.ico" sizes="16x16">
    <link rel="apple-touch-icon" sizes="180x180" href="icons/applewh.png" aria-setsize="16x16">
    <link rel="icon" type="image/png" href="icons/applebl.png" sizes="32x32">
    <link rel="icon" type="image/png" href="icons/applebl.png" sizes="16x16">
    <link rel="mask-icon" href="icons/applewh.png" sizes="16x16">
    <meta name="theme-color" content="#ffffff">
+
+   <!-- Import SOURCE SANS PRO font -->
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+   <!-- Title -->
    <title>Webintosh Online</title>
+   <!-- stylesheet file -->
    <link rel="stylesheet" href="style.css">
 </head>
 <style>
@@ -22,16 +30,22 @@
 </style>
 
 <body>
+
+   <!-- Menu Bar -->
+
    <header>
       <nav class="navbar">
          <ul>
             <li>
+
+               <!-- DropDown for Apple Logo -->
                <div class="dropdown">
-                  <img onclick="myaFunction()" class="dropbtn"id='logo' src="icons/applewh.png" alt="">
+                  <img onclick="myaFunction()" class="dropbtn" id='logo' src="icons/applewh.png" alt="">
                   <div id="myaDropdown" class="adropdown-content">
                      <a onclick="openTrWin('viewp/about.jpg', 'About This Mac')" id='text'>About This Mac</a>
                      <hr>
-                     <a onclick="openImgWin('viewp/settings.png', 'System Preferences')" id='text'>System Preferences...</a>
+                     <a onclick="openImgWin('viewp/settings.png', 'System Preferences')" id='text'>System
+                        Preferences...</a>
                      <a onclick="openPopup('https://apps.apple.com', 'App Store')" id='text'>App Store...</a>
                      <hr>
                      <a href="#" id='text'>Sleep</a>
@@ -43,6 +57,7 @@
                </div>
                </div>
             </li>
+            <!-- DropDown for File Menu -->
             <li>
                <div class="dropdown">
                   <a onclick="myFunction()" class="dropbtn">File</a>
@@ -68,7 +83,10 @@
                      <a href="#" id='text'>Print...</a>
                   </div>
                </div>
-            </li><li>
+            </li>
+
+            <!-- DropDown for Edit Menu -->
+            <li>
                <div class="dropdown">
                   <a onclick="emyFunction()" class="dropbtn">Edit</a>
                   <div id="myeDropdown" class="edropdown-content">
@@ -95,6 +113,7 @@
                   </div>
                </div>
             </li>
+            <!-- DropDown for View Menu -->
             <li>
                <div class="dropdown">
                   <a onclick="myvFunction()" class="dropbtn">View</a>
@@ -146,6 +165,7 @@
                   </div>
                </div>
             </li>
+            <!-- DropDown for Window Menu  -->
             <li>
                <div class="dropdown">
                   <a onclick="mywFunction()" class="dropbtn">Window</a>
@@ -162,6 +182,7 @@
                   </div>
                </div>
             </li>
+            <!-- DropDown for Help Menu -->
             <li>
                <div class="dropdown">
                   <a onclick="myhFunction()" class="dropbtn">Help</a>
@@ -173,9 +194,17 @@
          </ul>
       </nav>
    </header>
+
+   <!-- ================================================================================================== -->
+
+   <!-- Background Image in a totally wierd position -->
    <img id="myVideo" src="bg/macOSBigSur.png" alt="">
+
+   <!-- Dock -->
    <div id="dock-container">
       <div id="dock">
+
+         <!-- App List -->
          <ul>
             <li>
                <span class='app'>Finder</span>
@@ -287,34 +316,37 @@
    <div class="widgets">
       <ul>
          <li>
-            <a><img id='ac'
-                  src="widget/accesitibility.png"></a>
+            <a><img id='ac' src="widget/accesitibility.png"></a>
          </li>
          <li>
-            <a><img id='battery'
-                  src="widget/battery.png"></a>
+            <a><img id='battery' src="widget/battery.png"></a>
          </li>
          <li>
-            <a><img id='wifi'
-                  src="widget/wifi.png" /></a>
+            <a><img id='wifi' src="widget/wifi.png" /></a>
          </li>
          <li>
-            <a><img id='search'
-                  src="widget/search.png" /></a>
+            <a><img id='search' src="widget/search.png" /></a>
          </li>
+         <!-- Empty spans filled by JS -->
          <li>
             <span id='date'></span>
          </li>
+         <!-- Empty spans filled by JS -->
          <li>
             <span id='time'></span>
          </li>
       </ul>
    </div>
 
-   
+<!-- SCRIPT SRC -->
 
 
    <script src="script.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="jquery.fittext.js"></script>
+<script>
+  jQuery(".navbar ul li").fitText();
+</script>
 </body>
 
 </html>
