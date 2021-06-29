@@ -26,6 +26,10 @@
       right: 5%;
       width: 90%;
    }    
+
+   #time{
+      width: 20px;
+   }
  }
 
  #dock-container li {
@@ -199,7 +203,7 @@
     margin-right: 2%;
     margin-top: 1px;
     margin-bottom: 1px;
-    font-size: medium;
+    font-size-adjust: 90% auto;
  }
 
  #time {
@@ -216,7 +220,7 @@
     margin-right: 2%;
     margin-top: 1px;
     margin-bottom: 1px;
-    font-size: medium;
+    font-size-adjust: 90% auto;
  }
 
 
